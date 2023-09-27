@@ -4,9 +4,6 @@ on:
   repository_dispatch:
   workflow_dispatch:
 
-  schedule:
-    - cron: 15 16 * * *
-
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
@@ -16,8 +13,8 @@ env:
   DIY_P2_SH: x86/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_CONFIG: true
-  UPLOAD_FIRMWARE: false
-  UPLOAD_RELEASE: true
+  UPLOAD_FIRMWARE: true
+  UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
   FILE_NAME: x86_64-四内核
 
